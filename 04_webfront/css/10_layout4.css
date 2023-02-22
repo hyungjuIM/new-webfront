@@ -1,0 +1,72 @@
+.test {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  background-color: rgba(255, 0, 0, 0.3);
+
+  /* relative가 없을때는 body기준 */
+  position: absolute;
+  left: 50px;
+  top: 275px;
+}
+
+.container-1 {
+  width: 300px;
+  height: 300px;
+  border: solid 2px black;
+
+  position: relative;
+}
+.container-1 > div {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.first {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+.second {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(85, 228, 109);
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  z-index: 2;
+}
+.third {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(238, 54, 48);
+  position: absolute;
+
+  top: 100px;
+  right: 100px;
+  z-index: 5;
+}
+.fixed-area {
+  border: 1px solid black;
+  width: 120px;
+  background-color: aquamarine;
+
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+.fixed-area a {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  height: 1500px;
+}

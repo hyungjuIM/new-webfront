@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label>고객명:</label>
+      <input type="text" /><br /><br />
+      <label>전화번호</label>
+      <input type="tel" /><br /><br />
+      <label>email:</label>
+      <input type="email" /><br />
+      피자선택:
+      <select name="pizza">
+        <option value="potato" name="potato">포테이토피자</option>
+        <option value="cheese" name="cheese">치즈피자</option>
+        <option value="피자를 선택" name="select" selected>
+          피자를 선택하세요
+        </option>
+      </select>
+      <fieldset>
+        <legend>피자사이즈</legend>
+        <label for="small">small</label>
+        <input type="radio" name="size" id="small" /><br />
+
+        <label for="med">Medium</label>
+        <input type="radio" name="size" id="med" />
+        <br />
+        <label for="large">large</label>
+        <input type="radio" name="size" id="large" />
+      </fieldset>
+      <fieldset>
+        <legend>토핑선택</legend>
+        <label for="베이컨">베이컨</label>
+        <input type="checkbox" name="select" id="베이컨" checked /><br />
+        <label for="치즈">치즈</label>
+        <input type="checkbox" name="select" id="치즈" /><br />
+        <label for="양파">양파</label>
+        <input type="checkbox" name="select" id="양파" checked /><br />
+        <label for="버섯">버섯</label>
+        <input type="checkbox" name="select" id="버섯" checked />
+      </fieldset>
+      <br />
+      희망배송시간: <input type="time" /><br />
+      <label for="etc"> 배송시 요청사항: </label>
+      <textarea name="etcc" id="etc" cols="10" rows="3"></textarea><br />
+      <button>주문하기</button>
+    </form>
+  </body>
+</html>

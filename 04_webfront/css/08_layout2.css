@@ -1,0 +1,21 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+.border {
+  border: 10px solid red;
+}
+.padding {
+  padding: 30px;
+}
+.margin {
+  margin: 50px;
+}
+
+/* *의 의미는 전체를 적용한다는 의미 */
+/* css기본세팅 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
