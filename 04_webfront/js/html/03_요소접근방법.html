@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_요소접근방법</title>
+
+    <style>
+      .area {
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Document Object Model -->
+    <!-- html을 객체화하여 모델링 한다 -->
+    <h1>DOM(Document Object Model)</h1>
+    <pre>
+        웹문서(html)의 모든 요소를 객체 형식으로 표현하는 방법
+        -> 문서 내 특정 요소에 접근하는 방법을 제공
+    </pre>
+    <hr />
+    <h1>DOM을 이용한 요소 접근 방법</h1>
+    <pre>
+        1. id 속성 값으로 접근하기
+            - document.getElementById("id속성값")
+
+        2. class 속성 값으로 접근하기
+            - document.getElementsByClassName("Class 속성값")
+
+        3. name 속성 값으로 접근하기
+            - document.getElementsByName("name속성값")
+        
+        4. tag name으로 접근하기
+            - document.getElementsByTagName("태그명")
+        
+        5. CSS 선택자를 이용해서 접근하기
+            1) document.querySelector("#test/.test"); 
+                - 단일 요소를 선택하는 방법
+                - class처럼 만약에 여러개라면 첫 번째 요소만 선택
+
+            2) document.querySelectorAll("CSS 선택자")
+                - 선택된 모든 요소를 얻어와 배열 형태 반환
+                  (각각의 index에 선택된 요소가 하나씩 있음)
+    </pre>
+    <script src="/04_webfront/js/js/03_요소접근방법.js"></script>
+  </body>
+</html>

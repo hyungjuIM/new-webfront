@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01_JS개요</title>
+
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>스크립트(Script 언어)</h1>
+    <pre>
+        기본 프로그램의 동작을 사용자의 요구에 맞게 수행되도록 해주는 용도의 언어.
+
+        별도로 컴파일을 진행하지 않고
+        인터프리터(Interpreter)를 이용하여 소스코드를 한 줄씩 읽어 바로 실행.
+        ->컴파일에 소요되는 시간이 없음. 대신 프로그램 실행 시간이 느림.
+    </pre>
+    <hr />
+    <h1>Javascript란?</h1>
+    <pre>
+        웹 브라우저에서 많이 사용하는 인터프리터 방식의 객체 지향 프로그래밍 언어.
+
+        ECMA Script 표준을 따르는 대표적인 웹 기술이다.
+    </pre>
+    <hr />
+    <h1>자바스크립트 작성 방법</h1>
+    <ul>
+      <li>브라우저 콘솔에 직접 작성 (테스트용)</li>
+      <li>태그에 직접 JS 코드를 작성(inline)</li>
+      <li>html 내부에 script태그를 이용하여 작성(internal)</li>
+      <li>html 외부에 파일(.js)을 이용하여 작성(external)</li>
+    </ul>
+
+    <!-- inline -->
+    <!-- onclink이라는 이벤트 안에 자바스크립트를 바로 작성한 것 -->
+    <button type="button" onclick="alert('인라인 버튼이 클릭되었습니다.')">
+      inline 방식
+    </button>
+    <!-- alert는 파업창 같이 위에 뜨는 함수 -->
+    <!-- internal -->
+    <!-- onclink에 함수뒤 ()는 필수, 함수 내용의 행동, 매개변수 -->
+    <button type="button" onclick="btnClick1()">internal 방식</button>
+    <button type="button" id="btn2">internal 방식2</button>
+
+    <!-- external -->
+    <button type="button" onclick="btnClick3()">external방식</button>
+
+    <!-- 버튼 눌렀을때 색까 채우기 예제 -->
+    <div id="box"></div>
+
+    <button type="button" onclick="changeColor1()">red</button>
+    <button type="button" onclick="changeColor2()">yellow</button>
+
+    <script>
+      // script 태그 내부는 JS를 작성하는 영역
+      //자바 스크립트는 function을 통해 함수 선언
+      function btnClick1() {
+        alert("internal버튼이 클릭되었습니다.");
+      }
+      //   비동기는 짬이 있을때 일을 동시에 진행 할 수 있는것. 주문을 받고 만들면서 또 주문을 받는 느낌
+      //꼭 필요한 함수만(동기) 헤더 그렇지 않으면(비동기) body 안에작성
+
+      //id가 "btn2" 인 요소가 클릭되었을때 기능 수행, 옛방식
+      document.getElementById("btn2").onclick = function () {
+        alert("internal버튼 2번이 클릭되었습니다.");
+      };
+    </script>
+
+    <!-- 외부 js파일 추가 -->
+    <!-- css는 link를 통해 연결 스크립트는 스크립트 태그 내부에서 연결 -->
+    <script src="/04_webfront/js/js/01_JS개요.js"></script>
+  </body>
+</html>
