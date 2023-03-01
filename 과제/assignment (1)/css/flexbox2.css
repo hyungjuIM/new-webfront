@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;    
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+    background-color: aquamarine;
+}
+
+#boxwrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+}
+
+.box1 {
+    width: 100%;
+    height: 20%;
+    background-color: purple;
+    margin:  auto;
+}
+
+.box2 {
+    width: 20%;
+    height: 80%;
+    background-color: pink;
+}
+
+.box3 {
+    width: 80%;
+    height: 80%;
+    background-color: greenyellow;
+}

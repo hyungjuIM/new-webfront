@@ -1,0 +1,35 @@
+*{box-sizing: border-box;
+margin: 0;
+}
+body{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(247, 251, 250);
+}
+  #flex-container{  display: flex;
+    background-color: rgb(228, 217, 217);
+    flex-wrap: wrap;
+    height:100%;
+   width: 90%;
+   margin: 0 auto;
+   
+}
+
+.item1{
+background-color: rgb(124, 124, 137);
+width: 100%;
+    height: 20%;
+
+}
+.item2{
+background-color: brown;
+width: 20%;
+height: 80%;
+
+}
+.item3{
+background-color: seagreen;
+width: 80%;
+    height: 80%;
+
+}
